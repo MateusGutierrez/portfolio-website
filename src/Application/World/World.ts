@@ -1,6 +1,7 @@
 import Application from '../Application';
 import Resources from '../Utils/Resources';
 import ComputerSetup from './Computer';
+import NewComputerSetup from './NewComputer'
 import MonitorScreen from './MonitorScreen';
 import Environment from './Environment';
 import Decor from './Decor';
@@ -17,6 +18,7 @@ export default class World {
     environment: Environment;
     decor: Decor;
     computerSetup: ComputerSetup;
+    newComputerSetup: NewComputerSetup;
     monitorScreen: MonitorScreen;
     coffeeSteam: CoffeeSteam;
     cursor: Cursor;
@@ -33,10 +35,11 @@ export default class World {
             this.decor = new Decor();
             this.computerSetup = new ComputerSetup();
             this.monitorScreen = new MonitorScreen();
+            this.newComputerSetup = new NewComputerSetup();
             this.coffeeSteam = new CoffeeSteam();
             this.audioManager = new AudioManager();
-            // const hb = new Hitboxes();
-            // this.cursor = new Cursor();
+            const hb = new Hitboxes();
+            this.cursor = new Cursor();
         });
     }
 

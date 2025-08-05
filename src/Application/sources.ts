@@ -1,5 +1,10 @@
 const sources: Resource[] = [
     {
+        name: 'newComputerSetupModel',
+        type: 'gltfModel',
+        path: 'models/newComputer/level-react-draco.glb',
+    },
+    {
         name: 'computerSetupModel',
         type: 'gltfModel',
         path: 'models/Computer/computer_setup.glb',
